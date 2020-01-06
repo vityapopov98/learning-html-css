@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f6f2f1;
+    padding-top: 1rem;
+}
+nav{
+    background-color: #313030;
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+}
+nav>a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;    
+}
+nav>a:hover{
+    background-color: #ff3f40;
+}
+@media(max-width: 640px){
+    nav{
+        font-size: 12px;
+        padding: 1rem;
+    }
+    nav>a{
+        padding: 1rem .25rem  1rem .25rem; 
+    }
+}
+.container{
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.banner{
+    background-color: #f6f2f1;
+    padding-top: 5rem;
+    height: 80vh;
+}
+.service{
+    background-color: white;
+}
