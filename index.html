@@ -5,62 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
 </head>
 <body>
 
+<header>
     <nav>
         <a href="">HOME</a>
         <a href="">PORTFOLIO</a>
         <a href="">ABOUT US</a>
         <a href="">CONTACT</a>
     </nav>
+</header>
 
     <section class="banner">
         <div class="container">
-            <div class="left">
-                
+            <div class="row">
+
+                <div class="column">
+                    <h1>Our strong <br> ORGANISATION</h1> 
+                    <!-- <h2 class="normal">Pirates of the Caribbbean</h2>
+                    <h2 class="small">Pirates of the Caribbbean</h2> -->
+                        <!-- <details>
+                            <summary>О нас</summary>
+                            bla blabla blabla bla bla bla bla
+                        </details> -->
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia inventore culpa debitis minima alias est dicta voluptatibus temporibus, vel delectus. Rem iusto qui officia nulla repellat ad repudiandae laborum quidem?</p> 
+    
+                    <button class="button">Contact Us</button>
+                </div>
+                <div class="column">
+                    <!-- video -->
+                    <iframe 
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                    </iframe>
+                </div>
             </div>
-            <h1>OUR STRONG <br> ORGANISATION</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia inventore culpa debitis minima alias est dicta voluptatibus temporibus, vel delectus. Rem iusto qui officia nulla repellat ad repudiandae laborum quidem?</p>
-    
-            <button class="button">Contact Us</button>
-    
-            <!-- video -->
-            <iframe width="420" height="315"
-            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-            </iframe>
         </div>
     </section>
 
     <section class="service">
         <div class="container">
+            <div class="row">
 
-            <h2>Do you know we can <br> provide for you?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reiciendis at maxime porro maiores sapiente, odit ut iusto sequi vel nam alias temporibus est tempora cumque incidunt, optio id delectus!</p>
-    
-            <button class="outlineButton">Learn More</button>
-    
-            <div class="advantagesBlock">
-                <div class="advantage">
-                    <img src="" alt="">
-                    <h3>Management</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="column">
+                    <h2>Do you know we can <br> provide for you?</h2>
+                    <p class="title-p"> <b>Lorem ipsum</b> dolor <u>sit amet consectetur</u> adipisicing elit. Quam reiciendis at maxime porro maiores sapiente, odit ut iusto sequi vel nam alias temporibus est tempora cumque incidunt, optio id delectus!</p>
+                    <button class="outlineButton">Learn More</button>
                 </div>
-                <div class="advantage">
-                    <img src="" alt="">
-                    <h3>UI/UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+                <div class="column">
+                    <div class="advantagesBlock">
+                        <div class="row">
+
+                            <div class="column">
+                                <img src="" alt="">
+                                <i class="material-icons">
+                                    settings_applications
+                                    </i>
+                                <h3>Management</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="column">
+                                <img src="" alt="">
+                                <i class="material-icons">
+                                    important_devices
+                                    </i>
+                                <h3>UI/UX Design</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <img src="" alt="">
+                                <i class="material-icons md-36">
+                                    check_circle
+                                    </i>
+                                <h3>Logo / Branding</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="column">
+                                <img src="" alt="">
+                                <i class="material-icons">
+                                    open_in_new
+                                    </i>
+                                <h3>Animation</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="advantage">
-                    <img src="" alt="">
-                    <h3>Logo / Branding</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="futureProduct">
+        <h3>Future products</h3>
+        <p class="title-p-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eum, voluptatum dolorum fugit excepturi cum eius alias ad.
+        </p>
+        <hr>
+        <div class="gallery">
+            <div class="galleryNav">
+                <ul>
+                    <li>
+                        <input type="radio" name="gallery" id="all" checked>
+                        <label for="all" class="galleryButton">All</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gallery" id="printTamplate">
+                        <label for="printTamplate" class="galleryButton">Print Tamplate</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gallery" id="webTamplate">
+                        <label for="webTamplate" class="galleryButton">Web Template</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gallery" id="userInterface">
+                        <label for="userInterface" class="galleryButton">User Interface</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="gallery" id="mockup">
+                        <label for="mockup" class="galleryButton">Mock-up</label>
+                    </li>
+                </ul>
+            </div>
+            <!-- pictures -->
+            <div class="galleryImages">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <br>
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="meetOurTeam">
+        <div class="container">
+            <h3>Meet our team</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium vitae ex nisi atque necessitatibus minima quae excepturi.</p>
+            <hr>
+
+            <div class="ourTeam">
+                <div class="column2 chosenPerson">
+                    <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
                 </div>
-                <div class="advantage">
-                    <img src="" alt="">
-                    <h3>Animation</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="column2 otherPersons">
+                    <h4>John Doe</h4>
+                    <p class="personDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim earum incidunt nisi. Impedit quidem doloribus eum aspernatur cumque nisi quo voluptas ut velit.</p>
+                    <a href="vk.com">Vk</a>
+                    <a href="vk.com">Instagram</a>
+                    <a href="vk.com">Facebook</a>
+                    <div class="personImg">
+                        <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                        <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                        <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                        <img src="debby-hudson-asviIGR3CPE-unsplash.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

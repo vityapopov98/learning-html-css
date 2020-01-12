@@ -1,23 +1,29 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+header{
     background-color: #f6f2f1;
     padding-top: 1rem;
 }
 nav{
     background-color: #313030;
     text-align: center;
-    width: 80%;
+    width: 80vw;
     padding: 1rem;
     margin: auto;
 }
 nav>a{
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem;
+    margin: 0px;
+    font-size: .75rem;
     text-decoration: none;    
 }
 nav>a:hover{
+    color: white;
     background-color: #ff3f40;
+    text-decoration: none; 
 }
 @media(max-width: 640px){
     nav{
@@ -36,8 +42,227 @@ nav>a:hover{
 .banner{
     background-color: #f6f2f1;
     padding-top: 5rem;
-    height: 80vh;
+    padding-bottom: 5rem;
+    /* height: 70vh; */
+}
+
+.column{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+    /* background-color: aqua; */
+    /* border: 1px solid #ff3f40; */
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+iframe{
+    border: none;
+    float: right;
+    width: 420px;
+    height: 315px;
+    /* <сдвиг по x> <сдвиг по y> <размытие> <растяжение> <цвет> */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+    .column.side, .column.middle {
+        width: 100%;
+    }
+    iframe{
+        width: 370px;
+        height: 215px;
+    }
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 2.5rem;
+}
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p{
+    line-height: 2rem;
 }
 .service{
     background-color: white;
+    padding-top: 5rem;
+}
+.title-p{
+    width: 80%;
+}
+.normal,.small{
+    font-family: serif;
+}
+.normal{
+    font-variant: normal;
+}
+.small{
+    font-variant: small-caps;
+}
+ul{
+    list-style-type: circle;
+}
+.button{
+    background-color: #ff3f40;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.button:hover{
+    background-color: #c12121;
+}
+.outlineButton{
+    background: none;;
+    border-radius: 4px;
+    border: 2px solid #ff3f40;
+    color: #ff3f40;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.outlineButton:hover{
+    color: white;
+    background-color: #ff3f40;
+}
+.material-icons{
+    color: #ff3f40;
+    font-size: 36px !important;
+}
+@media(max-width: 600px){
+    .advantagesBlock{
+        /* text-align: center; */
+    }
+    .title-p{
+        width: 100%;
+    }
+}
+.service hr{
+    width: 80%;
+    border: 1px solid #dedede;
+}
+.futureProduct{
+    padding-top: 2rem;
+    background-color: white;
+}
+.futureProduct h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.title-p-center{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+.futureProduct hr{
+    border: 2px solid tomato;
+    width: 10rem;
+}
+.galleryNav{
+text-align: center;
+padding: 1rem;
+margin-left: 2rem;
+margin-right: 2rem;
+}
+.galleryNav ul{
+    list-style-position: inside;
+    padding: 0;
+}
+.galleryNav li{
+    display: inline;
+}
+.galleryNav input{
+    display: none;
+}
+.galleryButton{
+    background: none;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6f6f6f;
+    font-weight: 700;
+    padding: 1rem;
+}
+.galleryNav input:checked~.galleryButton{
+    display: inline; 
+    color: #185ed8;  
+}
+@media(max-width:600px){
+    .galleryNav li{
+        display: block;
+        padding: .25rem;
+    }
+}
+.galleryImages{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.galleryImages img{
+    background-color: #6f6f6f;
+    width: 250px;
+    height: 250px;
+}
+.meetOurTeam{
+    padding-top: 3rem;
+}
+.meetOurTeam h3{
+    font-size: 1.5rem;
+}
+.meetOurTeam p{
+    width: 40%;
+    margin-bottom: .2rem;
+}
+.meetOurTeam hr{
+    border: 2px solid tomato;
+    width: 10rem;
+    float: left;
+}
+.ourTeam{
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+}
+.column2{
+    float: left;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.column2.chosenPerson{
+    width: 25%;
+}
+.chosenPerson img{
+    background-color: #6f6f6f;
+    width: 250px;
+    height: 350px;
+}
+.column2.otherPersons{
+    width: 75%;
+}
+.personDescription{
+    width: 80% !important;
+}
+.personImg img{
+    width: 200px;
+    height: 200px;
 }
