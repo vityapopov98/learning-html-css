@@ -216,14 +216,38 @@ margin-right: 2rem;
     width: 100%;
     box-sizing: border-box;
     text-align: center;
+    overflow: hidden;
+    margin: auto;
+    
 }
-.galleryImages img{
-    background-color: #6f6f6f;
+.gallery-row{
+    /* display: inline-block; */
+}
+.img-container{
     width: 250px;
     height: 250px;
+    background-color: aqua;
+    overflow: hidden;
+    display: inline-block;
+    /* float: left; */
+    margin: 1rem;
+}
+.img-container-sm{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 1rem;
+}
+.galleryImages img{
+    /* background-color: #6f6f6f; */
+    width: 100%;
+    height: auto;
 }
 .meetOurTeam{
     padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 .meetOurTeam h3{
     font-size: 1.5rem;
@@ -253,8 +277,8 @@ margin-right: 2rem;
 }
 .chosenPerson img{
     background-color: #6f6f6f;
-    width: 250px;
-    height: 350px;
+    width: 100%;
+    /* height: 350px; */
 }
 .column2.otherPersons{
     width: 75%;
@@ -265,4 +289,28 @@ margin-right: 2rem;
 .personImg img{
     width: 200px;
     height: 200px;
+}
+.subscribe{
+    background-image: url('jenny-caywood-LeYviMKafFo-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+.form-input{
+    padding: 1rem;
+    width: 250px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.overlay{
+    background-color: rgba(38, 38, 38, 0.461);
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5rem;
+    /* margin: auto; */
 }
