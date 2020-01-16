@@ -256,7 +256,12 @@ margin-right: 2rem;
     width: 40%;
     margin-bottom: .2rem;
 }
-.meetOurTeam hr{
+/* .meetOurTeam hr{
+    border: 2px solid tomato;
+    width: 10rem;
+    float: left;
+} */
+.hr-right{
     border: 2px solid tomato;
     width: 10rem;
     float: left;
@@ -313,4 +318,84 @@ margin-right: 2rem;
     height: 100%;
     padding: 5rem;
     /* margin: auto; */
+}
+.form-input-mail{
+    padding: 1rem;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    background-color: #ededed;
+    width: 49.5%;
+    box-sizing: border-box;
+}
+textarea{
+    display: block;
+    padding: 1rem;
+    margin-top: .5rem;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ededed;
+}
+.get-in-touch{
+    padding-top: 3rem;
+    position: relative;
+}
+/* .get-in-touch form{
+    width: 100%;
+    box-sizing: border-box;
+} */
+.grey-bg{
+    width: 30vw;
+    padding: 2rem;
+    background-color: #313030;
+    color: white;
+}
+.grey-bg-new{
+    width: 30vw;
+    height: 30vh;
+    padding: 2rem;
+    position: absolute;
+    top: 16.5rem;
+    right: 0px;
+    background-color: #313030;
+    color: white;
+}
+.column2.message{
+width: 60%;
+}
+.column2.grey-bg{
+    width: 40%;
+}
+footer{
+    background-color: #313030;
+    margin-top: 5rem;
+    padding: 2rem;
+    color: #6f6f6f;
+}
+.foot{
+    display: inline-block;
+    padding-top: .75rem;
+    line-height: 100%;
+}
+footer ul{
+    float: right;
+    margin: 0em;
+}
+footer li{
+    display: inline;
+}
+footer a{
+    color: #6f6f6f;
+    text-decoration: none;
+}
+.long{
+    width: 100%;
+}
+footer .material-icons{
+color: #6f6f6f;
+margin: 0em;
+}
+footer .material-icons:hover{
+    color: #b8b8b8;
 }
