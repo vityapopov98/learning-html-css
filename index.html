@@ -209,9 +209,9 @@
         </div>
     </section>
     <section class="get-in-touch">
-        <div class="grey-bg-new">
+        <!-- <div class="grey-bg-new">
                 
-        </div>
+        </div> -->
         <div class="container">
             <h3>Get in touch</h3>
             <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque suscipit cumque repellendus vitae deserunt ratione! Impedit animi, ipsam possimus voluptatum expedita qui laudantium voluptate, iusto, explicabo porro a maxime cum!</p>
@@ -223,8 +223,14 @@
             <div class="row">
                 <div class="column2 message">
                     <form action="">
-                        <input type="text" class="form-input-mail" placeholder="Name">
-                        <input type="text" class="form-input-mail" placeholder="Your mail">
+                        <div class="row">
+                            <div class="column-message right-pad">
+                                <input type="text" class="form-input-mail" placeholder="Name">
+                            </div>
+                            <div class="column-message left-pad">
+                                <input type="text" class="form-input-mail" placeholder="Your mail">
+                            </div>
+                        </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Type your message"></textarea>
                         <input type="submit" class="button long" value="SEND MESSAGE">
                     </form>
@@ -245,43 +251,50 @@
 
     <footer>
         <div class="container">
-            <span class="foot">
-                Copyright Company 2020. All rights reserved
-            </span>
-            <ul>
-                <li>
-                    <a href="">
-                        <i class="material-icons">
-                            offline_bolt
-                        </i>    
-                            <!-- vk -->
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">
-                            offline_bolt
-                        </i>
-                        <!-- In -->
-                    </a> 
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">
-                            offline_bolt
-                        </i>
-                        <!-- Fb -->
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="material-icons">
-                            offline_bolt
-                        </i>
-                        <!-- You -->
-                    </a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="column">
+                    <span class="foot">
+                        Copyright Company 2020. All rights reserved
+                    </span>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">
+                                    offline_bolt
+                                </i>    
+                                    <!-- vk -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">
+                                    offline_bolt
+                                </i>
+                                <!-- In -->
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">
+                                    offline_bolt
+                                </i>
+                                <!-- Fb -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">
+                                    offline_bolt
+                                </i>
+                                <!-- You -->
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
         </div>
     </footer>
 </body>

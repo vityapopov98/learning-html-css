@@ -70,30 +70,45 @@ iframe{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width:600px) {
+    .banner{
+        padding-top: 0;
+    }
     .column {
       width: 100%;
+      overflow: hidden;
     }
     .column.side, .column.middle {
         width: 100%;
     }
     iframe{
-        width: 370px;
-        height: 215px;
+        /* width: 370px;
+        height: 215px; */
+        width: 100%;
+        height: auto;
     }
 }
 h1{
     text-transform: uppercase;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     font-size: 2.5rem;
 }
 h2{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     font-size: 2rem;
 }
 h3{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
+}
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+
 }
 p{
     line-height: 2rem;
@@ -207,6 +222,9 @@ margin-right: 2rem;
     color: #185ed8;  
 }
 @media(max-width:600px){
+    .title-p-center{
+        width: 80%;
+    }
     .galleryNav li{
         display: block;
         padding: .25rem;
@@ -256,6 +274,12 @@ margin-right: 2rem;
     width: 40%;
     margin-bottom: .2rem;
 }
+.meetOurTeam a{
+    color: #313030;
+    text-decoration: none;
+    font-style: italic;
+    padding: .5rem;
+}
 /* .meetOurTeam hr{
     border: 2px solid tomato;
     width: 10rem;
@@ -295,6 +319,19 @@ margin-right: 2rem;
     width: 200px;
     height: 200px;
 }
+@media(max-width: 600px){
+    .meetOurTeam p{
+        padding-left: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .column2.chosenPerson{
+        width: 100%;
+    }
+    .column2.otherPersons{
+        width: 100%;
+    }
+}
 .subscribe{
     background-image: url('jenny-caywood-LeYviMKafFo-unsplash.jpg');
     background-position: center center;
@@ -319,12 +356,33 @@ margin-right: 2rem;
     padding: 5rem;
     /* margin: auto; */
 }
+@media(max-width: 600px){
+    .overlay{
+        padding: 1rem;
+    }
+    .subscribe input{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
 .form-input-mail{
     padding: 1rem;
     border: 1px solid #ededed;
     border-radius: 4px;
     background-color: #ededed;
-    width: 49.5%;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.left-pad{
+    padding-left: .5rem;
+}
+.right-pad{
+    padding-right: .5rem;
+}
+.column-message{
+    float: left;
+    width: 50%;
     box-sizing: border-box;
 }
 textarea{
@@ -352,12 +410,10 @@ textarea{
     color: white;
 }
 .grey-bg-new{
+    margin-top: 1rem;
     width: 30vw;
-    height: 30vh;
-    padding: 2rem;
-    position: absolute;
-    top: 16.5rem;
-    right: 0px;
+    height: 100%;
+    overflow: hidden;
     background-color: #313030;
     color: white;
 }
@@ -366,6 +422,22 @@ width: 60%;
 }
 .column2.grey-bg{
     width: 40%;
+}
+@media(max-width: 600px){
+    .column-message{
+        width: 100%;
+        padding: 0;
+        margin-top: .5rem;
+    }
+    .column2.message{
+        width: 100%;
+    }
+    .column2.grey-bg{
+        width: 100%;
+    }
+    .grey-bg-new{
+        width: 100%;
+    }
 }
 footer{
     background-color: #313030;
